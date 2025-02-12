@@ -320,3 +320,25 @@ body {
     line-height: 1.6;
     color: var(--text-dark-color);
 }
+.github-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.github-section li {
+    background: #F5E1C8;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.github-section a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3D3D3D;
+}
+
+.github-section a:hover {
+    color: #0077cc;
+}
