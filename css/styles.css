@@ -1,0 +1,322 @@
+/* 共通のスタイルと変数 */
+:root {
+    /* カラーパレットの定義 */
+    --primary-color: #333333; /* メインのダークカラー */
+    --accent-color: #4a90e2; /* アクセントカラー（落ち着いたブルー） */
+    --light-color: #f9f9f9; /* ライトグレー */
+    --text-color: #ffffff; /* テキストの白 */
+    --text-dark-color: #333333; /* テキストのダークカラー */
+    --font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* 全体のスタイル */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    /* 背景に指定の画像を使用 */
+    background: url('../images/beach-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-dark-color);
+}
+
+/* ホワイトスペースの活用 */
+* {
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+.header {
+    background-color: #ffffff; /* 白ベースのヘッダー */
+    color: var(--primary-color); /* テキストをメインのダークカラーに */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header-title {
+    text-align: center;
+    margin: 0;
+    font-weight: bold; /* フォントを太く */
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: var(--primary-color); /* テキストをメインのダークカラーに */
+    text-decoration: none;
+    font-weight: bold; /* フォントを太く */
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--accent-color); /* ホバー時のカラー */
+}
+
+/* セクション共通 */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* 背景を少し透過 */
+    border-radius: 8px;
+}
+
+/* セクションごとの背景色の切り替え */
+.about {
+    background-color: rgba(249, 249, 249, 0.9);
+}
+
+.projects {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contact {
+    background-color: rgba(249, 249, 249, 0.9);
+}
+
+/* セクションタイトル */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* 自己紹介セクション */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    text-align: center;
+    max-width: 800px;
+    font-size: 1.1em;
+    color: var(--primary-color); /* テキストカラーをメインのダークカラーに変更 */
+}
+
+/* プロジェクトセクション */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.project-description {
+    margin: 0 0 15px;
+    color: var(--primary-color); /* テキストカラーをメインのダークカラーに変更 */
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #357ab7;
+}
+
+/* 連絡先セクション */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.submit-btn {
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #357ab7;
+}
+
+/* フッター */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+/* メディアクエリ */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text {
+        text-align: left;
+        margin-left: 40px;
+    }
+}
+
+/* スクロール時のアニメーション（オプション） */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Webアプリセクション */
+.app-section {
+    padding: 40px 20px;
+}
+
+.app-card {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.app-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.app-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.app-link:hover {
+    color: #357ab7;
+}
+
+.app-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.app-description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--text-dark-color);
+}

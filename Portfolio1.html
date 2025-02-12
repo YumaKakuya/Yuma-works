@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YumaKakuya</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <h1 class="header-title">Yuma Kakuya</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#projects">日々の取り組み</a></li>
+                <li><a href="#contact">私へのお問い合わせはこちら。</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-container">
+        <!-- 自己紹介セクション -->
+        <section id="about" class="section about">
+            <h2 class="section-title">自己紹介</h2>
+            <div class="about-content">
+                <img src="./images/profile.jpg" alt="プロフィール画像" class="profile-image">
+                <p class="about-text">
+                    角谷 侑磨：Yuma Kakuya<br>
+                    私は現在キャルITカレッジ大阪校で6ヶ月間のJavaプログラミング学習中。PHPや、AWSやクラウド技術にも興味があり、日々学び続けています。
+                </p>
+            </div>
+        </section>
+
+        <!-- プロジェクトセクション -->
+        <section id="projects" class="section projects">
+            <h2 class="section-title">日々の取組について</h2>
+            <div class="project-grid">
+                <!-- プロジェクトカード1 -->
+                <div class="project-card">
+                    <img src="./images/project1.jpg" alt="プロジェクト1" class="project-image">
+                    <h3 class="project-title">ウェブサイト制作</h3>
+                    <p class="project-description">現在ご覧のウェブサイトをHTML、CSS、JavaScript、PHPで作成しました。</p>
+                    <a href="project1-details.html" class="project-link">詳細を見る</a>
+                </div>
+
+                <!-- プロジェクトカード2 -->
+                <div class="project-card">
+                    <img src="./images/project2.jpg" alt="プロジェクト2" class="project-image">
+                    <h3 class="project-title">コーディングチャレンジ</h3>
+                    <p class="project-description">毎日コーディング課題に取り組み、アルゴリズムとデータ構造の理解を日々1つでも多く深めています。</p>
+                    <a href="project2-details.html" class="project-link">詳細を見る</a>
+                </div>
+
+                <!-- プロジェクトカード3 -->
+                <div class="project-card">
+                    <img src="./images/project3.jpg" alt="プロジェクト3" class="project-image">
+                    <h3 class="project-title">Webアプリ開発</h3>
+                    <p class="project-description">現在は、Springフレームワークを学習中。</p>
+                    <a href="project3-details.html" class="project-link">詳細を見る</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 連絡先セクション -->
+        <section id="contact" class="section contact">
+            <h2 class="section-title">お問い合わせフォーム</h2>
+            <form class="contact-form" action="sendmail.php" method="POST">
+                <label for="name">名前:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレスを入力してください。</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">メッセージはこちらに入力してください。</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <p>&copy; 2025．Yuma　Kakuya</p>
+        <div class="social-icons">
+            <a href="https://github.com/yourprofile"><img src="./images/github.png" alt="GitHub"></a>
+            <a href="https://twitter.com/yourprofile"><img src="./images/twitter.png" alt="Twitter"></a>
+            <a href="https://linkedin.com/in/yourprofile"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="js/script.js"></script>
+</body>
+</html>
