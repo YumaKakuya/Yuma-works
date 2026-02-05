@@ -3,70 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webアプリ開発</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="角谷侑磨のWebアプリ開発プロジェクト。Springフレームワーク、Java、MySQLを使用したアプリケーション開発の学習記録。">
+    <title>Webアプリ開発プロジェクト | Yuma Kakuya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- ヘッダー -->
-    <header class="header">
+    <header class="header" role="banner">
         <h1 class="header-title">Webアプリ開発</h1>
-        <nav class="nav">
+        <nav class="nav" role="navigation" aria-label="プロジェクトナビゲーション">
             <ul class="nav-list">
-                <li><a href="Portfolio1.html">ホーム</a></li>
-                <li><a href="project1-details.html">Webサイト制作</a></li>
-                <li><a href="project2-details.html">コーディングチャレンジ</a></li>
-                <li><a href="project3-details.html">Webアプリ開発</a></li>
+                <li><a href="Portfolio1.html" aria-label="ホームページへ戻る">ホーム</a></li>
+                <li><a href="project1-details.html" aria-label="Webサイト制作ページへ">Webサイト制作</a></li>
+                <li><a href="project2-details.html" aria-label="コーディングチャレンジページへ">コーディングチャレンジ</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- メインコンテンツ -->
-    <main class="section app-section">
-        <h2 class="section-title">これまでに作成したWebアプリ</h2>
-
-        <!-- アプリ1 -->
-        <div class="app-card">
-            <h3 class="app-title">タスク管理アプリ</h3>
-            <a href="https://example.com/task-manager" target="_blank" class="app-link">
-                アプリを試す
-            </a>
-            <img src="task-manager-screenshot.jpg" alt="タスク管理アプリのスクリーンショット" class="app-image">
-            <p class="app-description">
-                タスクを追加・編集・削除できるシンプルなタスク管理アプリです。JavaScriptとPHPを使用して作成しました。
-            </p>
+    <main class="section app-section" role="main">
+        <h2 class="section-title">Webアプリ開発プロジェクト</h2>
+        
+        <div class="intro-text">
+            <p>現在、Springフレームワークを中心にJavaでのWebアプリケーション開発を学習中です。<br>
+            MVCアーキテクチャやRESTful API、データベース連携などの実践的なスキルの習得を目指しています。</p>
         </div>
 
-        <!-- アプリ2 -->
-        <div class="app-card">
-            <h3 class="app-title">天気予報アプリ</h3>
-            <a href="https://example.com/weather-app" target="_blank" class="app-link">
-                アプリを試す
-            </a>
-            <img src="weather-app-screenshot.jpg" alt="天気予報アプリのスクリーンショット" class="app-image">
-            <p class="app-description">
-                APIを利用して現在の天気情報を取得するアプリです。HTML、CSS、JavaScriptで構築しました。
-            </p>
-        </div>
+        <section class="current-learning" aria-labelledby="learning-title">
+            <h3 id="learning-title" class="section-subtitle">📖 現在学習中の技術</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">🌱</div>
+                    <h4>Spring Framework</h4>
+                    <p>Spring Boot、Spring MVC、Spring Data JPAを使用したエンタープライズアプリケーション開発</p>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="tech-icon">☕</div>
+                    <h4>Java</h4>
+                    <p>オブジェクト指向プログラミング、例外処理、コレクションフレームワーク、ラムダ式</p>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="tech-icon">🗄️</div>
+                    <h4>MySQL</h4>
+                    <p>データベース設計、SQL操作（CRUD）、トランザクション管理、正規化</p>
+                </div>
+                
+                <div class="tech-item">
+                    <div class="tech-icon">🏗️</div>
+                    <h4>MVCアーキテクチャ</h4>
+                    <p>Model-View-Controller設計パターン、責任の分離、保守性の高いコード設計</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- アプリ3 -->
-        <div class="app-card">
-            <h3 class="app-title">ブログ投稿アプリ</h3>
-            <a href="https://example.com/blog-app" target="_blank" class="app-link">
-                アプリを試す
-            </a>
-            <img src="blog-app-screenshot.jpg" alt="ブログ投稿アプリのスクリーンショット" class="app-image">
-            <p class="app-description">
-                記事を投稿・管理できるブログアプリです。PHPとMySQLを使用してデータベース連携を実現しました。
-            </p>
+        <section class="project-plans" aria-labelledby="plans-title">
+            <h3 id="plans-title" class="section-subtitle">🚀 開発予定のアプリケーション</h3>
+            
+            <!-- タスク管理アプリ -->
+            <article class="app-card">
+                <div class="app-status">計画中</div>
+                <h4 class="app-title">タスク管理アプリ</h4>
+                <img src="./images/読書中.jpg" 
+                     alt="学習中のイメージ画像" 
+                     class="app-image"
+                     loading="lazy"
+                     width="400"
+                     height="250">
+                <div class="app-description">
+                    <p><strong>概要:</strong> ユーザーがタスクを登録・管理できるWebアプリケーション</p>
+                    <p><strong>主な機能:</strong></p>
+                    <ul>
+                        <li>ユーザー認証・ログイン機能</li>
+                        <li>タスクの作成・編集・削除（CRUD操作）</li>
+                        <li>優先度設定と期限管理</li>
+                        <li>カテゴリー別のタスク分類</li>
+                        <li>完了状態の管理</li>
+                    </ul>
+                    <p><strong>使用技術:</strong> Spring Boot, Thymeleaf, MySQL, Bootstrap</p>
+                </div>
+            </article>
+
+            <!-- 書籍管理システム -->
+            <article class="app-card">
+                <div class="app-status">構想中</div>
+                <h4 class="app-title">書籍管理システム</h4>
+                <img src="./images/花博記念公園.jpg" 
+                     alt="プロジェクト構想中のイメージ画像" 
+                     class="app-image"
+                     loading="lazy"
+                     width="400"
+                     height="250">
+                <div class="app-description">
+                    <p><strong>概要:</strong> 個人の読書記録を管理し、読書体験を記録できるアプリケーション</p>
+                    <p><strong>主な機能:</strong></p>
+                    <ul>
+                        <li>書籍情報の登録と検索</li>
+                        <li>読書状態の管理（読了・読書中・未読）</li>
+                        <li>評価とレビューの記録</li>
+                        <li>読書統計の可視化</li>
+                        <li>おすすめ書籍のリスト化</li>
+                    </ul>
+                    <p><strong>使用技術:</strong> Spring Boot, Spring Data JPA, MySQL, RESTful API</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="learning-goals" aria-labelledby="goals-title">
+            <h3 id="goals-title" class="section-subtitle">🎯 学習目標</h3>
+            <div class="goals-list">
+                <div class="goal-item">
+                    <span class="goal-number">01</span>
+                    <div class="goal-content">
+                        <h4>基礎の徹底</h4>
+                        <p>SpringフレームワークとJavaの基礎をしっかりと身につけ、実践的なアプリケーション開発ができるようになる</p>
+                    </div>
+                </div>
+                
+                <div class="goal-item">
+                    <span class="goal-number">02</span>
+                    <div class="goal-content">
+                        <h4>データベース連携</h4>
+                        <p>Spring Data JPAを使用したデータベース操作の習熟と、効率的なデータ管理の実装</p>
+                    </div>
+                </div>
+                
+                <div class="goal-item">
+                    <span class="goal-number">03</span>
+                    <div class="goal-content">
+                        <h4>セキュリティ対策</h4>
+                        <p>Spring Securityを用いた認証・認可の実装、SQLインジェクション対策など</p>
+                    </div>
+                </div>
+                
+                <div class="goal-item">
+                    <span class="goal-number">04</span>
+                    <div class="goal-content">
+                        <h4>デプロイ経験</h4>
+                        <p>AWSやHerokuなどのクラウド環境へのデプロイを経験し、本番運用のスキルを習得</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="back-to-home">
+            <a href="Portfolio1.html" class="back-link" aria-label="ホームページに戻る">← ホームに戻る</a>
         </div>
     </main>
 
     <!-- フッター -->
-    <footer class="footer">
-        <p>&copy; 2025 Yuma Kakuya</p>
-        <div class="social-icons">
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 Yuma Kakuya. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/YumaKakuya" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="GitHubプロフィールを開く（新しいタブ）">
+                    <img src="./images/pngimg.com - github_PNG15.png" alt="GitHub" width="30" height="30">
+                </a>
+            </div>
+            <p class="footer-note">Made with ❤️ using HTML, CSS, JavaScript, PHP & AWS</p>
         </div>
     </footer>
 </body>

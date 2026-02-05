@@ -1,0 +1,12 @@
+# robots.txt for Portfolio Site
+
+User-agent: *
+Allow: /
+
+# 除外ディレクトリ
+Disallow: /vendor/
+Disallow: /.git/
+Disallow: /video/
+
+# サイトマップの場所
+Sitemap: https://yourportfolio.com/sitemap.xml

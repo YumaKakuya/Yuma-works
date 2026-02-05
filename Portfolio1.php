@@ -1,3 +1,6 @@
+<?php
+// ...existing code before <!DOCTYPE html> remains unchanged...
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -31,6 +34,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <?php
+    /* // API Gatewayを使うため、PHPでのメッセージ表示は不要になる可能性が高い
+    if(isset($_GET['success']) && $_GET['success'] == 1){
+        echo '<p class="success">お問い合わせありがとうございます。メールを送信しました。</p>';
+    }
+    if(isset($_GET['error'])){
+        echo '<p class="error">メール送信に失敗しました。エラー: ' . htmlspecialchars($_GET['error']) . '</p>';
+    }
+    */
+    ?>
     <!-- ヘッダー -->
     <header class="header" role="banner">
         <h1 class="header-title">Yuma Kakuya</h1>

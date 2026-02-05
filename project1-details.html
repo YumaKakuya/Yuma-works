@@ -3,69 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ウェブサイト制作 - プロジェクト詳細</title>
+    <meta name="description" content="角谷侑磨のウェブサイト制作プロジェクト詳細。HTML、CSS、JavaScript、PHP、AWSを使用したポートフォリオサイトの開発過程を紹介。">
+    <title>ウェブサイト制作 - プロジェクト詳細 | Yuma Kakuya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" role="banner">
         <h1 class="header-title">ウェブサイト制作</h1>
-        <nav class="nav">
+        <nav class="nav" role="navigation" aria-label="プロジェクトナビゲーション">
             <ul class="nav-list">
-                <li><a href="Portfolio1.html">ホーム</a></li>
-                <li><a href="project2-details.html">コーディングチャレンジ</a></li>
-                <li><a href="project3-details.html">Webアプリ開発</a></li>
+                <li><a href="Portfolio1.html" aria-label="ホームページへ戻る">ホーム</a></li>
+                <li><a href="project2-details.html" aria-label="コーディングチャレンジページへ">コーディングチャレンジ</a></li>
+                <li><a href="project3-details.html" aria-label="Webアプリ開発ページへ">Webアプリ開発</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main-container">
-        <section class="section intro">
-            <h2 class="section-title">イントロダクション</h2>
-            <p>このプロジェクトは、飲食業界で25年間の経験を積んできた私が、全くのIT未経験から新たな挑戦として始めた学習の成果をまとめたものです。<br>
-                現在、キャルITカレッジ大阪校で6ヶ月間のJavaプログラミング学習を続ける中で、PHPやAWS、クラウド技術にも興味を持ち、日々学びを深めています。<br>
-                このウェブサイトは、私が学習の過程で培ったスキルを実践に活かし、HTML、CSS、JavaScript、PHPを用いて作成したものです。このプロジェクトを通じて、IT業界への理解を深めるとともに、実践的なスキルを身につけることを目指しています。...</p>
+    <main class="main-container" role="main">
+        <section class="section intro" aria-labelledby="intro-title">
+            <h2 id="intro-title" class="section-title">イントロダクション</h2>
+            <p>このプロジェクトは、飲食業界で25年間の経験を積んできた私が、全くのIT未経験から新たな挑戦として始めた学習の成果をまとめたものです。</p>
+            <p>現在、キャルITカレッジ大阪校で6ヶ月間のJavaプログラミング学習を続ける中で、PHPやAWS、クラウド技術にも興味を持ち、日々学びを深めています。</p>
+            <p>このウェブサイトは、私が学習の過程で培ったスキルを実践に活かし、HTML、CSS、JavaScript、PHPを用いて作成したものです。このプロジェクトを通じて、IT業界への理解を深めるとともに、実践的なスキルを身につけることを目指しています。</p>
         </section>
-        <section class="section details">
-            <h2 class="section-title">プロジェクトの詳細</h2>
-            <p>このホームページを制作した背景<br>
-                キャルITカレッジ大阪校でJavaを学びつつ、手を動かす楽しさを知るためにこのウェブサイト制作をスタート。<br>
-                HTML/CSSで見た目を整え、JavaScriptで動きを加え、PHPで仕組みを作る過程は、まるで新しいレシピを開発するようでワクワクが止まりません。<br>
-                クラウド環境（AWS）での制作は、サーバーの設定ひとつとっても「なぜ？」を追求する姿勢が大切だと実感しました。</p>
-            <p>使用した技術<br>
-            HTML<br>
-            CSS<br>
-            PHP(お問い合わせフォーム)<br>
-            JavaScript</p>
-        </section>
-        <section class="section features">
-            <h2 class="section-title">現在の学習と取り組み</h2>
-            <p>現在の学習と取り組み 日々Javaと向き合いながらも、いろいろなことをやりたい欲張りな性格なのでいろいろなことを学ぶことのできる日々がとても充実していて、毎日楽しく過ごしています。<br>
-             Javaの進捗は、オブジェクト指向や例外処理などを中心に理解を深めている最中です。 現在のスキルはまだまだですが、基本をしっかりと固める時期だと思って取り組んでいます。<br>
-            個人的な予習として、現在はPHPの学習と、JavaでWebアプリを作成するためにSpringフレームワークを中心に自習しています。</p>
-        </section>
-        <section class="section progress">
-            <h2 class="section-title">学校での学習進行状況</h2>
-            <p>2024.10.25キャルITカレッジ大阪校、ゼロから学べるJavaプログラミング科入校<br>
-            2024.12月下旬、スッキリわかるSQL入門を学校のカリキュラムにて学習。CRUD操作を中心に学習した。<br>
-            （SQLの理解はまだまだだと自身では感じているため、今後の課題）<br>
-        2025.1月初旬～現在、オブジェクト指向や例外処理を学ぶ。</p>
+        <section class="section details" aria-labelledby="details-title">
+            <h2 id="details-title" class="section-title">プロジェクトの詳細</h2>
             
+            <h3 class="subsection-title">このホームページを制作した背景</h3>
+            <p>キャルITカレッジ大阪校でJavaを学びつつ、手を動かす楽しさを知るためにこのウェブサイト制作をスタートしました。</p>
+            <p>HTML/CSSで見た目を整え、JavaScriptで動きを加え、PHPで仕組みを作る過程は、まるで新しいレシピを開発するようでワクワクが止まりません。</p>
+            <p>クラウド環境（AWS）での制作は、サーバーの設定ひとつとっても「なぜ？」を追求する姿勢が大切だと実感しました。</p>
+            
+            <h3 class="subsection-title">使用した技術スタック</h3>
+            <ul class="tech-stack">
+                <li><strong>HTML5</strong> - セマンティックなマークアップ、アクセシビリティ対応</li>
+                <li><strong>CSS3</strong> - レスポンシブデザイン、CSS変数、アニメーション</li>
+                <li><strong>JavaScript (ES6+)</strong> - 非同期処理、Fetch API、イベントハンドリング</li>
+                <li><strong>PHP</strong> - お問い合わせフォームのバックエンド処理、PHPMailer</li>
+                <li><strong>AWS</strong> - API Gateway、Lambda、SES（Simple Email Service）</li>
+            </ul>
         </section>
-        <section class="section demo">
-            <h2 class="section-title">今後の取組み</h2>
-            <div class="window-container">
-                <img src="images/demo.jpg" alt="ウェブサイトのスクリーンショット" class="window-image">
+        <section class="section features" aria-labelledby="features-title">
+            <h2 id="features-title" class="section-title">現在の学習と取り組み</h2>
+            <p>日々Javaと向き合いながらも、いろいろなことをやりたい欲張りな性格なので、様々なことを学ぶことのできる日々がとても充実していて、毎日楽しく過ごしています。</p>
+            <p>Javaの進捗は、オブジェクト指向や例外処理などを中心に理解を深めている最中です。現在のスキルはまだまだですが、基本をしっかりと固める時期だと思って取り組んでいます。</p>
+            <p>個人的な予習として、現在はPHPの学習と、JavaでWebアプリを作成するためにSpringフレームワークを中心に自習しています。</p>
+            
+            <h3 class="subsection-title">実装した主な機能</h3>
+            <ul class="feature-list">
+                <li>✓ レスポンシブデザイン（モバイル・タブレット・PC対応）</li>
+                <li>✓ スムーズスクロール機能</li>
+                <li>✓ AWS API Gatewayを使った問い合わせフォーム</li>
+                <li>✓ フォームバリデーション・エラーハンドリング</li>
+                <li>✓ SEO対策（メタタグ、OGP設定）</li>
+                <li>✓ アクセシビリティ対応（ARIA属性、キーボード操作）</li>
+            </ul>
+        </section>
+        <section class="section progress" aria-labelledby="progress-title">
+            <h2 id="progress-title" class="section-title">学習進行状況</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024年10月</div>
+                    <div class="timeline-content">
+                        <h4>キャルITカレッジ大阪校 入校</h4>
+                        <p>ゼロから学べるJavaプログラミング科に入校。IT業界への第一歩を踏み出しました。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024年12月</div>
+                    <div class="timeline-content">
+                        <h4>SQL基礎学習</h4>
+                        <p>スッキリわかるSQL入門を学校のカリキュラムにて学習。CRUD操作を中心に学習しました。<br>
+                        <em>※SQLの理解はまだまだだと感じているため、今後の課題として継続学習中</em></p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2025年1月〜現在</div>
+                    <div class="timeline-content">
+                        <h4>オブジェクト指向・例外処理</h4>
+                        <p>Javaのオブジェクト指向プログラミングや例外処理を学習中。同時にSpringフレームワークやPHPの自習も進めています。</p>
+                    </div>
+                </div>
             </div>
-            <p>SpringフレームワークとMySQLを使用したウェブアプリ制作を行います。<br>
-            また、AWSの学習も進め、クラウド環境でのウェブアプリのデプロイを行います。<br>
-            さらに、PHPの学習を深め、ウェブアプリの開発に活かしていきます。</p>
         </section>
-        <section class="section navigation">
-            <h2 class="section-title">ナビゲーション</h2>
-            <p><a href="Portfolio1.html">ホームに戻る</a></p>
+        <section class="section demo" aria-labelledby="demo-title">
+            <h2 id="demo-title" class="section-title">今後の取組み</h2>
+            <div class="future-plans">
+                <div class="plan-card">
+                    <h4>🚀 Springフレームワーク × MySQL</h4>
+                    <p>SpringフレームワークとMySQLを使用した本格的なWebアプリケーション開発に挑戦します。</p>
+                </div>
+                
+                <div class="plan-card">
+                    <h4>☁️ AWS学習の深化</h4>
+                    <p>EC2、RDS、S3などのサービスを活用し、クラウド環境でのWebアプリのデプロイを実践します。</p>
+                </div>
+                
+                <div class="plan-card">
+                    <h4>💻 PHP開発スキルの向上</h4>
+                    <p>Laravelフレームワークの学習や、よりセキュアで保守性の高いPHPコードの作成を目指します。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section navigation" aria-labelledby="nav-title">
+            <div class="back-to-home">
+                <a href="Portfolio1.html" class="back-link" aria-label="ホームページに戻る">← ホームに戻る</a>
+            </div>
         </section>
     </main>
-    <footer class="footer">
-        <p>&copy; 2025 Yuma Kakuya</p>
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 Yuma Kakuya. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/YumaKakuya" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="GitHubプロフィールを開く（新しいタブ）">
+                    <img src="./images/pngimg.com - github_PNG15.png" alt="GitHub" width="30" height="30">
+                </a>
+            </div>
+            <p class="footer-note">Made with ❤️ using HTML, CSS, JavaScript, PHP & AWS</p>
+        </div>
     </footer>
 </body>
 </html>

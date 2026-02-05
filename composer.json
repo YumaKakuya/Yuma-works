@@ -1,0 +1,28 @@
+{
+    "name": "yumakakuya/portfolio",
+    "description": "Personal Portfolio Website for Yuma Kakuya",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Yuma Kakuya",
+            "email": "your-email@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Portfolio\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

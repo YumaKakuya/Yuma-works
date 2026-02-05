@@ -1,0 +1,55 @@
+# 環境変数ファイル
+.env
+.env.local
+.env.production
+
+# Composer
+/vendor/
+composer.lock
+
+# IDEとエディター
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# ログファイル
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 一時ファイル
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS生成ファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# バックアップファイル
+*.bak
+*.backup
+*~
+
+# キャッシュ
+.cache/
+*.cache
+
+# テスト
+/test/
+/tests/coverage/
+
+# Node modules（もし将来使用する場合）
+node_modules/
+package-lock.json
